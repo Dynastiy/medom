@@ -1,0 +1,309 @@
+@import url('https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css");
+:root {
+    --main-color: #006478;
+    --secondary-color: #00D1CD;
+    --accent-color: #00d1ce11;
+    --light-color: #fff;
+    --main-font: 'Raleway', sans-serif;
+    ;
+}
+
+*,
+html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--main-font);
+    text-decoration: none !important;
+    list-style: none;
+    transition: all 0.6s;
+    -webkit-transition: all 0.6s;
+    -o-transition: all 0.6s;
+    scroll-behavior: smooth;
+}
+
+.row {
+    padding: 0;
+    margin: 0;
+}
+
+.hero__section {
+    background: url('@/assets/img/hero.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-color: rgba(0, 0, 0, 0.7);
+    background-blend-mode: overlay;
+    background-attachment: fixed;
+}
+
+.content {
+    padding: 1.5rem 5rem;
+}
+
+.join__waitlist {
+    border: 1px solid var(--main-color);
+    border-radius: 5px;
+    padding: 0.6rem 2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--main-color);
+    background-color: transparent;
+    background-color: var(--light-color);
+}
+
+.join__waitlist:hover {
+    background-color: var(--main-color);
+    color: var(--light-color);
+}
+
+.appNav ul li a {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: var(--main-color);
+}
+
+.appNav ul li a:hover {
+    color: var(--secondary-color);
+}
+
+.hero__section {
+    height: 500px;
+}
+
+.hero__section .header {
+    font-size: 60px;
+    font-weight: bold;
+    /* color: var(--main-color);
+     */
+    color: #fff;
+}
+
+.hero__section p.text-secondary {
+    color: var(--main-color) !important;
+    font-weight: bold;
+}
+
+.mobile-nav {
+    display: none;
+}
+
+.design {
+    background-color: var(--accent-color);
+    width: 20%;
+    height: 25px;
+    border-radius: 0 10px 10px 0;
+}
+
+.design2 {
+    background-color: var(--accent-color);
+    width: 20%;
+    height: 25px;
+    border-radius: 10px 0 0 10px;
+}
+
+#how-it-works h5 {
+    color: var(--main-color);
+    /* width: 75%; */
+}
+
+#how-it-works {
+    background-color: var(--accent-color);
+}
+
+#how-it-works .how-card {
+    /* background-color: #fff; */
+    width: 60%;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    gap: 20px
+}
+
+#how-it-works p {
+    font-size: 0.9rem;
+    /* width: 75%; */
+}
+
+#how-it-works input {
+    padding: 0.8rem;
+    border-radius: 5px;
+    border: none
+}
+
+#how-it-works input:focus {
+    outline: 2px solid var(--accent-color);
+}
+
+.health-care-provider input {
+    padding: 0.8rem;
+    border-radius: 5px;
+    border: 1px solid var(--main-color)
+}
+
+.health-care-provider input:focus {
+    outline: 2px solid var(--main-color);
+}
+
+.health-care-provider .how-card {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    gap: 20px;
+    margin-bottom: 1rem;
+}
+
+
+/* footer */
+
+.footer ul {
+    display: inline-grid;
+    grid-auto-flow: row;
+    grid-gap: 24px;
+    justify-items: center;
+    align-items: center;
+    margin: auto;
+}
+
+.footer a {
+    color: var(--main-color);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+    box-shadow: inset 0 -1px 0 hsla(0, 0%, 100%, 0.4);
+}
+
+.footer a:hover {
+    box-shadow: inset 0 -1.2em 0 hsla(0, 0%, 100%, 0.4);
+}
+
+.footer li:last-child {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.waitlist__section {
+    background: url("@/assets/img/contact.jpg");
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    /* height: 500px; */
+    padding: 3rem;
+    background-position: center
+}
+
+.waitlist__section .waitlist__form {
+    width: 40%;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.864);
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.03);
+    padding: 1rem;
+}
+
+
+/* li:hover~li p {
+    animation: wave-animation 0.3s infinite;
+} */
+
+
+/* below is just for demo styling */
+
+.footer .footer__content {
+    display: flex;
+    /* height: 100px; */
+    width: 100%;
+    align-items: center;
+    /* background-color: var(--accent-color); */
+    line-height: 1.3;
+    /* font-family: Menlo, monospace; */
+}
+
+.footer {
+    background-color: var(--accent-color);
+}
+
+.line {
+    height: 1px;
+    background-color: var(--main-color);
+}
+
+.waitlist__form input,
+.waitlist__form select {
+    padding: 0.3rem;
+    border-radius: 3px;
+    border: none;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.waitlist__form h3 {
+    color: var(--main-color);
+}
+
+.waitlist__form button {
+    border: none;
+    width: 100%;
+    text-transform: uppercase;
+    color: var(--light-color);
+    background-color: var(--main-color);
+    border-radius: 3px;
+    padding: 0.6rem;
+}
+
+@media (min-width: 500px) {
+    .footer ul {
+        grid-auto-flow: column;
+    }
+}
+
+@media (max-width: 990px) {
+    .content {
+        padding: 1rem 1rem;
+    }
+    .hero__section .header {
+        font-size: 30px;
+        font-weight: bold;
+        /* color: var(--main-color); */
+    }
+    .w-50 {
+        width: 100% !important;
+    }
+    #how-it-works .how-card {
+        width: 100%;
+        background-color: #fff;
+        margin-bottom: 1rem;
+        padding: 1rem;
+        box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.03);
+    }
+    #how-it-works .how-card img {
+        width: 100px;
+    }
+    .health-care-provider .how-card {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        background-color: #00d1ce11;
+        padding: 1rem;
+        border: 2px solid #00d1ce11;
+        margin: 0 auto;
+        gap: 20px;
+        margin-bottom: 1rem;
+    }
+    .health-care-provider .how-card img {
+        width: 100px;
+    }
+    .appNav {
+        display: none !important;
+    }
+    .mobile-nav {
+        display: unset;
+    }
+    .waitlist__section .waitlist__form {
+        width: 100%;
+        margin: 0 auto;
+        background-color: rgba(255, 255, 255, 0.864);
+        box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.03);
+        padding: 1rem;
+    }
+}
