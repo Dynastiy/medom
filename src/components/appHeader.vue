@@ -44,11 +44,11 @@
               >
             </li>
           </ul>
-          <form class="form-inline my-2 my-lg-0">
+          <div>
             <a href="#waitlist"
               ><button class="join__waitlist">Join Waitlist</button></a
             >
-          </form>
+          </div>
         </div>
       </nav>
     </div>
